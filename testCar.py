@@ -30,12 +30,12 @@ class CarClassTest(unittest.TestCase):
 
     def test_car_doors(self):
         opel = Car('Opel', 'Omega 3')
-        porshe = Car('Porshe', '911 Turbo')
+        porsche = Car('Porsche', '911 Turbo')
         self.assertListEqual([opel.num_of_doors,
-                             porshe.num_of_doors,
+                             porsche.num_of_doors,
                              Car('Koenigsegg', 'Agera R').num_of_doors],
                              [4, 2, 2],
-                             msg='The car shoud have four (4) doors except its a Porshe or Koenigsegg')
+                             msg='The car shoud have four (4) doors except its a Porsche or Koenigsegg')
 
     def test_car_wheels(self):
         man = Car('MAN', 'Truck', 'trailer')
