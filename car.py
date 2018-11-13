@@ -28,7 +28,7 @@ class Car:
         elif drive_mode == 3:
             self.speed = 1000
         
-        return Car(self.name, self.model, self.car_type, self.speed, self.num_of_doors, self.num_of_wheels)
+        return self
     
 
 
